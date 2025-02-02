@@ -1,20 +1,33 @@
-# FAQ Management System
+## 🚀 FAQ Management System
 
-A Django-based FAQ management system with multi-language translation support, a WYSIWYG editor, and a REST API. Includes Redis caching for improved performance.
+## Description
+This is a Django-based FAQ management system that supports multi-language translations, a WYSIWYG editor for answers, and a REST API for managing FAQs. It also includes caching with Redis for improved performance.
+
+---
+## Features
+1. Multilingual Support: FAQ content is available in multiple languages (English, Hindi, Bengali, Telugu, Tamil, Malayalam, Kannada).
+2. WYSIWYG Editor: Rich text editor for FAQ answers (using django-ckeditor).
+3. Automatic Translation: Translates FAQ questions and answers using Google Translate API during object creation.
+4. Caching: Caching with Redis for faster API responses.
+5. REST API: Endpoints for managing and retrieving FAQs with language support.
+6. Django Admin: Admin panel to manage FAQs and their translations easily.
+
+## Table of Contents
+1. [Installation](#installation)
+2. [API Usage](#api-usage)
+3. [Contribution Guidelines](#contribution-guidelines)
+4. [License](#license)
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Installation
 
 ### Prerequisites
-- Python 3.9+
-- Docker and Docker Compose (optional)
+- Python 3.9 or higher
+- Docker and Docker Compose 
 - Redis (for caching)
 
----
-
-### 🛠️Installation
-
+### Steps
 
 #### **Local Setup**
 1. Clone the repository:
@@ -28,7 +41,7 @@ A Django-based FAQ management system with multi-language translation support, a 
 
     ```bash
     python3 -m venv venv
-    source `venv\Scripts\activate`
+    source  `venv\Scripts\activate`
     ```
 
 3. Install the required dependencies:
@@ -63,13 +76,7 @@ A Django-based FAQ management system with multi-language translation support, a 
 
 Now you can access the project at `http://localhost:8000`.
 
-## Docker Setup
-Build and Run Containers:
-```bash
-docker-compose up --build
-```
-
-### 📡 API Usage
+## 📡 API Usage
 
 The system exposes a **REST API** to manage and retrieve FAQs.
 
@@ -91,11 +98,11 @@ The system exposes a **REST API** to manage and retrieve FAQs.
     curl http://localhost:8000/api/faqs/?lang=bn
     ```
 
-### 🛠️  Caching
+## 🛠️ Caching
 
 The API uses **Redis** for caching FAQ translations. By default, the cache is stored in `redis://127.0.0.1:6379/1`.
 
-## 🖥️  Admin Panel
+## 🖥️ Admin Panel
 
 You can access the Django admin panel at `http://localhost:8000/admin/`.
 - Login with the superuser credentials you created earlier.
@@ -115,7 +122,7 @@ This project comes with a `Dockerfile` and `docker-compose.yml` file for contain
 
 2. The application will be available at `http://localhost:8000`.
 
-## 🧪  Tests
+## 🧪 Tests
 
 To run tests, make sure to activate your virtual environment and run:
 
@@ -123,7 +130,7 @@ To run tests, make sure to activate your virtual environment and run:
 pytest
 ```
 
-## Unit Tests
+Unit Tests
 
 Unit tests are included to test:
 	•	Model methods (for translation and caching).
