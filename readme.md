@@ -28,8 +28,7 @@ A Django-based FAQ management system with multi-language translation support, a 
 
     ```bash
     python3 -m venv venv
-    source venv/bin/activate 
-     # On Windows use `venv\Scripts\activate`
+    source `venv\Scripts\activate`
     ```
 
 3. Install the required dependencies:
@@ -124,7 +123,7 @@ To run tests, make sure to activate your virtual environment and run:
 pytest
 ```
 
-Unit Tests
+## Unit Tests
 
 Unit tests are included to test:
 	•	Model methods (for translation and caching).
@@ -158,12 +157,9 @@ git commit -m "docs: Update documentation"
 git push origin feature-name
 ```
 
+6.Open a Pull Request.
 
-Use conventional commit messages:
 
-bash
-
-bash
 ## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
