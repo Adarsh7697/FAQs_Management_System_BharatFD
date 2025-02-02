@@ -140,12 +140,30 @@ Follow conventional commit message practices:
 Ensure atomic commits with clear commit messages.
 
 ## 🤝 Contributing
-	1.	Fork the repository.
-	2.	Create a new branch: git checkout -b feature-name.
-	3.	Make your changes and commit them: git commit -m 'feat: Add feature'.
-	4.	Push to your forked repository: git push origin feature-name.
-	5.	Create a pull request from your fork to this repository.
+## We welcome contributions! Follow these steps:
+1. Fork the Repository.
+2. Create a Branch:
+```bash
+git checkout -b feature-name
+```
+3.Your Changes.
+4.Commit Your Changes:
+```bash
+git commit -m "feat: Add feature"
+git commit -m "fix: Fix bug"
+git commit -m "docs: Update documentation"
+```
+5.Push to Your Fork:
+```bash
+git push origin feature-name
+```
 
+
+Use conventional commit messages:
+
+bash
+
+bash
 ## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
