@@ -1,26 +1,20 @@
 # FAQ Management System
 
-## Description
-This is a Django-based FAQ management system that supports multi-language translations, a WYSIWYG editor for answers, and a REST API for managing FAQs. It also includes caching with Redis for improved performance.
+A Django-based FAQ management system with multi-language translation support, a WYSIWYG editor, and a REST API. Includes Redis caching for improved performance.
 
 ---
 
-## Table of Contents
-1. [Installation](#installation)
-2. [API Usage](#api-usage)
-3. [Contribution Guidelines](#contribution-guidelines)
-4. [License](#license)
-
----
-
-## Installation
+## 🚀 Getting Started
 
 ### Prerequisites
-- Python 3.9 or higher
-- Docker and Docker Compose 
+- Python 3.9+
+- Docker and Docker Compose (optional)
 - Redis (for caching)
 
-### Steps
+---
+
+## 🛠️ Installation
+
 
 #### **Local Setup**
 1. Clone the repository:
@@ -70,7 +64,13 @@ This is a Django-based FAQ management system that supports multi-language transl
 
 Now you can access the project at `http://localhost:8000`.
 
-## API Usage
+## Docker Setup
+Build and Run Containers:
+```bash
+docker-compose up --build
+```
+
+##📡  API Usage
 
 The system exposes a **REST API** to manage and retrieve FAQs.
 
@@ -92,11 +92,11 @@ The system exposes a **REST API** to manage and retrieve FAQs.
     curl http://localhost:8000/api/faqs/?lang=bn
     ```
 
-### Caching
+###🛠️  Caching
 
 The API uses **Redis** for caching FAQ translations. By default, the cache is stored in `redis://127.0.0.1:6379/1`.
 
-## Admin Panel
+##🖥️  Admin Panel
 
 You can access the Django admin panel at `http://localhost:8000/admin/`.
 - Login with the superuser credentials you created earlier.
@@ -116,7 +116,7 @@ This project comes with a `Dockerfile` and `docker-compose.yml` file for contain
 
 2. The application will be available at `http://localhost:8000`.
 
-## Tests
+##🧪  Tests
 
 To run tests, make sure to activate your virtual environment and run:
 
@@ -139,13 +139,13 @@ Follow conventional commit message practices:
 
 Ensure atomic commits with clear commit messages.
 
-Contributing
+##🤝 Contributing
 	1.	Fork the repository.
 	2.	Create a new branch: git checkout -b feature-name.
 	3.	Make your changes and commit them: git commit -m 'feat: Add feature'.
 	4.	Push to your forked repository: git push origin feature-name.
 	5.	Create a pull request from your fork to this repository.
 
-License
+##📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
