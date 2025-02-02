@@ -5,7 +5,7 @@ This is a Django-based FAQ management system that supports multi-language transl
 
 ---
 ## Features
-1. Multilingual Support: FAQ content is available in multiple languages (English, Hindi, Bengali, Telugu, Tamil, Malayalam, Kannada).
+1. Multilingual Support: FAQ content is available in multiple languages (English, Hindi, Bengali).
 2. WYSIWYG Editor: Rich text editor for FAQ answers (using django-ckeditor).
 3. Automatic Translation: Translates FAQ questions and answers using Google Translate API during object creation.
 4. Caching: Caching with Redis for faster API responses.
