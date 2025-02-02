@@ -13,7 +13,7 @@ A Django-based FAQ management system with multi-language translation support, a 
 
 ---
 
-## 🛠️ Installation
+### 🛠️Installation
 
 
 #### **Local Setup**
@@ -70,7 +70,7 @@ Build and Run Containers:
 docker-compose up --build
 ```
 
-##📡  API Usage
+### 📡 API Usage
 
 The system exposes a **REST API** to manage and retrieve FAQs.
 
@@ -92,11 +92,11 @@ The system exposes a **REST API** to manage and retrieve FAQs.
     curl http://localhost:8000/api/faqs/?lang=bn
     ```
 
-###🛠️  Caching
+### 🛠️  Caching
 
 The API uses **Redis** for caching FAQ translations. By default, the cache is stored in `redis://127.0.0.1:6379/1`.
 
-##🖥️  Admin Panel
+## 🖥️  Admin Panel
 
 You can access the Django admin panel at `http://localhost:8000/admin/`.
 - Login with the superuser credentials you created earlier.
@@ -116,7 +116,7 @@ This project comes with a `Dockerfile` and `docker-compose.yml` file for contain
 
 2. The application will be available at `http://localhost:8000`.
 
-##🧪  Tests
+## 🧪  Tests
 
 To run tests, make sure to activate your virtual environment and run:
 
@@ -139,13 +139,13 @@ Follow conventional commit message practices:
 
 Ensure atomic commits with clear commit messages.
 
-##🤝 Contributing
+## 🤝 Contributing
 	1.	Fork the repository.
 	2.	Create a new branch: git checkout -b feature-name.
 	3.	Make your changes and commit them: git commit -m 'feat: Add feature'.
 	4.	Push to your forked repository: git push origin feature-name.
 	5.	Create a pull request from your fork to this repository.
 
-##📜 License
+## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
